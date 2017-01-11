@@ -72,6 +72,9 @@ module DepositUtils
   
   def self.removeHyacinthFilesAndSubir(hyacinth_upload_subdir,
                                        filenames)
+
+    Rails.logger.info "!!!!!!!!!! About to remove the following directory: "  + File.join(HYACINTH_CONFIG[:upload_directory],hyacinth_upload_subdir)
+    return
     filenames.each do |file|
       FileUtils.remove_file(File.join(HYACINTH_CONFIG[:upload_directory],
                                       hyacinth_upload_subdir,

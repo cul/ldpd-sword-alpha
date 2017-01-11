@@ -84,7 +84,7 @@ class SwordController < ApplicationController
     @hyacinth_response = @hyacinth_ingest.ingest_json @json_for_hyacinth_asset
 
     # fcd1, 12/07/16: Remove files and tmp dir from hyacinth upload directory.
-    # Sword::DepositUtils.removeHyacinthFilesAndSubir(@temp_subdir_in_hyacinth_upload_dir, files)
+    Sword::DepositUtils.removeHyacinthFilesAndSubir(@temp_subdir_in_hyacinth_upload_dir, files)
 
     @deposit = Deposit.new
     @deposit.deposit_files = files
