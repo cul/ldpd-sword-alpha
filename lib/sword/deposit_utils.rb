@@ -74,8 +74,9 @@ module DepositUtils
                                        filenames)
 
     Rails.logger.info "!!!!!!!!!! About to remove the following directory: "  + File.join(HYACINTH_CONFIG[:upload_directory],hyacinth_upload_subdir)
-    return
+
     filenames.each do |file|
+    Rails.logger.info "!!!!!!!!!! First, remove the following file: "  + File.join(HYACINTH_CONFIG[:upload_directory],hyacinth_upload_subdir,file)
       FileUtils.remove_file(File.join(HYACINTH_CONFIG[:upload_directory],
                                       hyacinth_upload_subdir,
                                       file
