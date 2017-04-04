@@ -9,6 +9,7 @@ class SwordController < ApplicationController
   before_action :check_depositor_collection_permission, only: [:deposit]
 
   def deposit
+    DepositNotifier.send_notification('foo')
     # at this, with all the before_action filters, the following instance variables are set:
     # @collection, @depositor
 
