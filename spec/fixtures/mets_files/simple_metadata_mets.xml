@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets xmlns="http://www.loc.gov/METS/"
+      xmlns:mods="http://www.loc.gov/mods/v3"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.loc.gov/METS/
+			  http://www.loc.gov/standards/mets/mets.xsd
+			  http://www.loc.gov/mods/v3
+			  http://www.loc.gov/standards/mods/v3/mods-3-2.xsd">
+  <dmdSec ID="DM1">
+    <mdWrap MDTYPE="MODS">
+      <xmlData>
+        <submission>
+          <authorship>
+            <author type="primary">
+              <name>
+                <surname>Granger</surname>
+                <fname>Hermione</fname>
+                <middle>Jean</middle>
+                <suffix/>
+              </name>
+            </author>
+            <author type="additional">
+              <name>
+                <surname>Potter</surname>
+                <fname>Harry</fname>
+                <middle>James</middle>
+                <suffix/>
+              </name>
+            </author>    
+          </authorship>
+          <description>
+            <title>Tow Journalism: The Title That Was</title>
+            <dates>
+              <date>2015</date>
+            </dates>
+            <contributor>
+              <dept_name>Columbia University. Tow Center for Digital Journalism</dept_name>
+              <dept_name>Columbia University. Journalism</dept_name>
+            </contributor>
+          </description>
+          <content>
+            <abstract><para>This is the first paragraph that is, it seems.</para></abstract>
+            <binary type="PDF">FILENAME.pdf</binary>
+          </content>
+        </submission>
+      </xmlData>      
+    </mdWrap>
+  </dmdSec>
+</mets>
